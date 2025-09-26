@@ -25,6 +25,8 @@ flutter:
    - assets/lottie/onboard1.json
    - assets/lottie/onboard2.json
    - assets/lottie/Question.json
+   - assets/lottie/login.json
+   - assets/images/google.png
   # fonts:
   #   - family: Schyler
   #     fonts:
