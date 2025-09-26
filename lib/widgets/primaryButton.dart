@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roomshare/widgets/appText.dart';
 
 import '../core/themes/app_color.dart';
 
@@ -30,6 +31,10 @@ class PrimaryButton extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            child: Text(text)));
+            child: AppText(
+              text,
+              color: AppColors.midnightBlue,
+              weight: FontWeight.bold,
+            )));
   }
 }

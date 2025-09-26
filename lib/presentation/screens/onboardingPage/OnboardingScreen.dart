@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:roomshare/presentation/screens/loginPage/phonePage.dart';
 import 'package:roomshare/presentation/screens/onboardingPage/widgets/OnboardingPage.dart';
 import 'package:roomshare/widgets/primaryButton.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -69,6 +70,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 fullWidth: false,
                 text: _isLastPage ? "Get Started" : "Next",
                 onPressed: () {
+                  if (_isLastPage) {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PhonePage()));
+                  }
                   _controller.nextPage(
                       duration: Duration(microseconds: 100),
                       curve: Curves.easeInOut);
